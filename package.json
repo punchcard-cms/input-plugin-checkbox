@@ -1,6 +1,7 @@
 {
   "name": "input-plugin-checkbox",
   "description": "An input plugin with multiple checkboxes",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
     "test": "npm run nyc",
