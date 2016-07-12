@@ -45,5 +45,5 @@ module.exports = {
       },
     },
   },
-  html: '{% for option in checkbox.options %}<label for="{{checkbox.id}}--{{loop.index}}"><input type="{{checkbox.type}}" name="{{checkbox.name}}" id="{{checkbox.id}}--{{loop.index}}" value="{{option.value}}" {% if option.value == checkbox.value %}checked{% endif %}>{{option.label}}</label>{% endfor %}',
+  html: '{% for option in checkbox.options %}<label for="{{checkbox.id}}--{{loop.index}}"><input type="{{checkbox.type}}" name="{{checkbox.name}}" id="{{checkbox.id}}--{{loop.index}}" value="{{option.value}}" {% if option.value in checkbox.value %}checked{% endif %}>{{option.label}}</label>{% endfor %}',
 };
