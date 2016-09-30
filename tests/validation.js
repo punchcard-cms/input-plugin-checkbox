@@ -1,6 +1,13 @@
 import test from 'ava';
 import validation from '../lib/validation';
 
+const empty = {
+  target: {
+    name: 'checkbox',
+    value: '',
+  },
+};
+
 const input = {
   target: {
     name: 'checkbox',
@@ -11,27 +18,14 @@ const input = {
   },
 };
 
-const settings = {
-  target: {
-    empty: false,
-  },
-  all: {
-    checkbox: {
-      empty: false,
-    },
-  },
-};
+const settings = {};
 
 
 // Valid input
-test('valid input', t => {
-  t.true(validation(input, settings), 'Valid input returns true');
+test('empty input', t => {
+  t.true(validation(empty, settings), 'empty input returns true');
 });
 
-// Invalid input
-test('validate correct input', t => {
-  const ip = input;
-  ip.target.value = '';
-
-  t.is(validation(ip, settings), 'checkbox cannot be left blank!', 'Return string if not valid');
+test('valid input', t => {
+  t.true(validation(input, settings), 'Any input returns true');
 });

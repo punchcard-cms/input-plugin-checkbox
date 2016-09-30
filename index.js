@@ -40,9 +40,6 @@ module.exports = {
           value: 'yellow',
         },
       ],
-      settings: {
-        empty: false,
-      },
     },
   },
   html: '<ul>{% for option in checkbox.options %}<li><input type="{{checkbox.type}}" name="{{checkbox.name}}" id="{{checkbox.id}}--{{loop.index}}" value="{{option.value}}" {% if checkbox.value %}{% if option.value in checkbox.value %}checked{% endif %}{% endif %}><label for="{{checkbox.id}}--{{loop.index}}">{{option.label}}</label></li>{% endfor %}</ul>',
