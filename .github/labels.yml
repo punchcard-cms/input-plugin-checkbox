@@ -1,11 +1,13 @@
 section:
-  description: Section of Punchcard Commit Messages that this issue belongs to.
+  description: Section of the Puncchard Input Plugin that this issue belongs to.
   color: '#c0e6ff'
   labels:
-    - emoji
-    - message
+    - inputs
+    - validation
+    - settings
+    - markup
 problem:
-  description: 'Issues that make Punchcard Commit Messages feel broken or prevent us from doing further work, but otherwise work as designed. High priority.'
+  description: 'Issues that make the Puncchard Input Plugin feel broken or prevent us from doing further work, but otherwise work as designed. High priority.'
   color: '#ff5050'
   labels:
     - blocked
@@ -14,7 +16,7 @@ problem:
     - externally blocked
     - hotfix
 experience:
-  description: Issues that affect a user's comprehension or overall enjoyment of Punchcard Commit Messages.
+  description: Issues that affect a user's comprehension or overall enjoyment of the Puncchard Input Plugin.
   color: '#ffa573'
   labels:
     - visual design
